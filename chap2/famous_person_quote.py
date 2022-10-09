@@ -4,10 +4,14 @@ quote = "A person who never made a mistake never learned anything new."
 famous_person = "Albert Einstein"
 blank_line = "\n"
 number_to_repeat = 80
-screen_extras = "*" * number_to_repeat
+screen_extras = "*"
 print(blank_line)
-print(screen_extras)
+print(screen_extras * 80)
+print(screen_extras * 40)
+print(blank_line)
 message = f"{famous_person} once said, \"{quote}\""
 print(message)
-print(screen_extras)
+print(blank_line)
+print(screen_extras * 40)
+print(screen_extras * 80)
 print(blank_line)
