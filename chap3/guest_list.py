@@ -50,3 +50,29 @@ dinner_list.insert(0, "Hypatia of Alexandria")
 print(dinner_list)
 dinner_list.insert(middle_of_list, "Mikhail Gorbachev")
 print(dinner_list)
+dinner_list.append("Prince Siddhartha")
+print(dinner_list)
+
+# now print the invitations
+
+print_invitations()
+
+my_message = "Well, we just found out that we have to have our dinner at our friend's house, as a water main broke. Therefore we can have only two dinner guests."
+print_pretty(my_message)
+
+while len(dinner_list) > 2:
+    guest_we_must_uninvite = dinner_list.pop()
+    print(f"With great regret, {guest_we_must_uninvite}, I must inform you that we had to reduce the guest list, and you are invited for our dinner next month")
+
+print(dinner_list)
+
+print_invitations()
+
+my_message = "Now we will clear the list."
+
+while len(dinner_list) > 0:
+    del dinner_list[-1]
+
+print_pretty(my_message)
+print(dinner_list)
+
