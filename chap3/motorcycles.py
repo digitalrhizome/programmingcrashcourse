@@ -1,0 +1,38 @@
+# Modifying elements of lists. 
+motorcycles = ["honda", "yamaha", "suzuki"]
+print('The original list is: ')
+print(motorcycles)
+print("now let's change the first element of the list and print out the result")
+motorcycles[0] = 'ducati'
+print(motorcycles)
+print("Now I will change the second element to a different motorcycle manufacturer, and print out the result also.")
+motorcycles[1] = "bmw"
+print(motorcycles)
+print("Okay, let's add Ducati again, but at the end of the list with the Python list append method")
+motorcycles.append('ducati')
+print(motorcycles)
+print("Okay, now let's reset the list to empty")
+motorcycles = []
+print(motorcycles)
+motorcycles.append("honda")
+print(motorcycles)
+motorcycles.append("bmw")
+print(motorcycles)
+motorcycles.append("ducati")
+print(motorcycles)
+motorcycles.append("yamaha")
+print(motorcycles)
+motorcycles.append("suzuki")
+print(motorcycles)
+last_owned = motorcycles.pop()
+print("The last motorcycle he owned was a", last_owned.title())
+print("Now we will see that the pop() method can take an index, any index from the list, as a parameter")
+first_owned = motorcycles.pop(0)
+print("The first motorcycle he owned was a", first_owned.title())
+
+print("Now you can see that the first and last items from the list we build, we've popped those, so three items should be left")
+print(motorcycles)
+motorcycles.append("suzuki")
+print(motorcycles)
+motorcycles.remove('ducati')
+print(motorcycles)
