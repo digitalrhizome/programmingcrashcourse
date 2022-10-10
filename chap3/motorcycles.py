@@ -34,5 +34,7 @@ print("Now you can see that the first and last items from the list we build, we'
 print(motorcycles)
 motorcycles.append("suzuki")
 print(motorcycles)
-motorcycles.remove('ducati')
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive)
 print(motorcycles)
+print(f"A {too_expensive.title()} is too expensive for me at this time.")
