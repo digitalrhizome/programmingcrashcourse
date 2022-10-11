@@ -9,3 +9,12 @@ for value in range(1,11):
     squares.append(value**2)
 # print the resulting list, it should print all the squares between 1 and 100, inclusive:
 print(squares)
+
+# Now we will use a list comprehension
+print("Now we will generate and print the same list of squares, using a list comprehension")
+
+squares = []
+squares = [value**2 for value in range(1,11)]
+print(squares)
+
+
